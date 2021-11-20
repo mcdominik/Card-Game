@@ -42,6 +42,9 @@ class Deck():
         random.shuffle(self.cards)
         print(f'{self.name} is shuffled.'.capitalize())
 
+    def draw_card(self):
+        return self.cards.pop()
+
 
 class Player():
     def __init__(self, name):
